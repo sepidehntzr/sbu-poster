@@ -1,0 +1,366 @@
+%%  MS Poster Template with Latex for Shahid Beheshti University (SBU).
+%%	by: Sepideh Entezari Maleki
+%%  entezari.sepideh@gmail.com
+%%	July 2020
+%% https://github.com/sepidehntzr/sbu-poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[final,hyperref={pdfpagelabels=false}]{beamer}
+%\documentclass[10pt,xcolor=dvipsnames,professionalfont]{beamer}
+\usepackage{bidi}
+
+\usepackage{multirow}
+\usepackage[orientation=portrait,size=a1,scale=1.4]{beamerposter} % Use the beamerposter package for laying out the poster with a portrait orientation and an a1 paper size
+\usepackage{xcolor}
+\usetheme{I6pd2} % Use the I6pd2 theme suplied with this template
+%\usepackage{extsizes}
+%\usepackage[english]{babel} % English language/hyphenation
+
+\usepackage{exscale}
+
+
+\usepackage{amsmath,amsthm,amssymb,latexsym} % For including math equations, theorems, symbols, etc
+
+\usepackage{times}\usefonttheme{professionalfonts}  % Uncomment to use Times as the main font
+
+\usefonttheme[onlymath]{serif} % Uncomment to use a Serif font within math environments
+
+\boldmath % Use bold for everything within the math environment
+
+\usepackage{booktabs} % Top and bottom rules for tables
+
+\definecolor{mygreen1}{rgb}{0.0078, 0.5098, 0.4078}
+
+
+\graphicspath{{figures/}} % Location of the graphics files
+
+\usecaptiontemplate{\small\structure{\insertcaptionname~\insertcaptionnumber: }\insertcaption} % A fix for figure numbering
+
+%%%%%%%%%%%%%%
+\usepackage{amsmath,amssymb,amsfonts} 
+\usepackage{tikz} 
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{ptext}
+\usepackage{fontspec}
+%\usefonttheme{serif}
+\setbeamercovered{transparent}
+%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xepersian}
+\usepackage{fontspec}
+%\setsansfont{IRNazanin.ttf}
+\setsansfont{Mitra.ttf}
+\setlatintextfont{times.ttf}
+\settextfont[Scale=2.15]{Mitra.ttf}
+\setlatintextfont[Scale=.9]{times.ttf}
+\defpersianfont\titlefont[Scale=1.15]{Mitra.ttf}
+
+
+
+\input{command}
+\raggedleft
+%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\title{\huge استفاده از شکل‌های خبرگی در بازیابی خبره} % Poster title 
+
+
+\author{ارائه‌دهنده: سپیده انتظاری ملکی     \\ استاد راهنما: دکتر محمود نشاطی}
+% \\ s.entezari@mail.sbu.ac.ir , m.neshati@sbu.ac.ir} % Author(s)
+
+%\supervisor{استاد راهنما: دکتر محمود نشاطی}
+%\institute{استاد راهنما: دکتر محمود نشاطی} % Institution(s
+\institute{دانشکده علوم و مهندسی کامپیوتر دانشگاه شهید بهشتی} % Institution(s)
+
+
+%----------------------------------------------------------------------------------------
+%	FOOTER TEXT
+%----------------------------------------------------------------------------------------
+
+\newcommand{\rightfoot}{entezari.sepideh@gmail.com} % Left footer text
+
+\newcommand{\leftfoot}{} % Right footer text
+
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{document}
+\DefaultMathsDigits
+
+\addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
+
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame
+
+\begin{columns}[t] % The whole poster consists of two major columns, each of which can be subdivided further with another \begin{columns} block - the [t] argument aligns each column's content to the top
+
+\begin{column}{.02\textwidth}\end{column} % Empty spacer column
+
+\begin{column}{.465\textwidth} % The first column
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+            
+\begin{block}{\timesroman طرح مساله}
+
+\textbf{بازیابی‌خبره} یک زیر حوزه از بازیابی موجودیت شناخته می‌شود. در این نوع از سیستم‌ها به دنبال استخراج افرادی هستیم که در حوزه خاصی خبره باشند.
+ 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\linewidth, height=12cm]{figures/pic1.png} 
+\\ {\small یافتن افراد خبره}
+\end{figure}
+
+\begin{itemize}
+
+\item
+در مساله بازیابی خبره، برای یک پرس­و­جو، افراد براساس میزان خبره بودن در آن موضوع بازیابی می‌شدند، ‌درحالی‌که افراد دارای انواع شکل‌های خبرگی هستند که براساس نیاز اطلاعاتی در خبره یابی ممکن است هر یک از افراد با شکل خبرگی خاص برای پاسخ به آن نیاز اطلاعاتی باشد.
+
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+%\item 
+%\textcolor{ta4chameleon}{\textbf{RQ1.}} 
+
+\end{itemize}
+%\begin {itemize}
+%\item How to accommodate need and give continuous improvement toward both sides, teachers and KM system? 
+
+\end{block}
+
+
+%----------------------------------------------------------------------------------------
+%	Datasets
+%----------------------------------------------------------------------------------------
+
+
+\begin{block}{ادبیات پژوهش}
+\begin{itemize}
+%\textcolor{ta4chameleon}{
+\item
+مساله بازیابی خبره دارای دو بعد کلی استخراج شواهد خبرگی و مدل‌سازی است.
+
+
+\item
+شواهد خبرگی، اطلاعات در مورد افراد از یک یا چند دامنه، که خبرگی فرد را در حوزه یا حوزه‌هایی نشان دهد.
+
+
+\item
+مدل‌سازی، رویکرد و روش استخراج افراد خبره برای یک موضوع داده شده، از شواهد خبرگی است
+
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\end{itemize}
+
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.4\linewidth, height=6cm]{figures/data.png}
+% \\{\small Two test collections gathered from Stackoverflow. }
+% \end{figure}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+%	METHODS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{مرور کار‌های انجام‌شده}
+
+\begin{itemize}
+
+\item در مدل‌سازی بازیابی خبره هدف یافتن ارتباط بین فرد و پرس‌و‌جو داده شده است
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{figures/pic2.png}
+\\ {\small مدل‌سازی فرد
+}
+\end{figure}
+
+\item
+مدل احتمالی تولیدکننده رابطه بین فرد و پرس‌و‌جو را براساس تخمین اینکه یک فرد چگونه تولید می‌شود، تخمین می‌زند.
+
+
+% \vspace{-11mm}
+% \begin{align*}
+%  \label{eq:tmkm_3}
+%   \text {\small $P(e,U,Set_{sa}) \approx P(e,U) P(e,Set_{sa})$}
+% \end{align*}
+
+
+\item 
+مدل رای‌گیری رابطه بین فرد و پرس‌و‌جو را با انجام یک فرآیند رای‌گیری انجام می‌دهد. در این روش اسناد رتبه‌بندی شده با وزن‌های متفاوت از بازیابی برای پرس‌و‌جو داده شده، به افراد مرتبط به خودش رای می‌دهند.
+
+\item مدل جداساز احتمال شرطی مرتبط بودن یا نبودن فرد و پرس‌و‌جو را تخمین می‌زند.
+
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+
+\end{itemize}
+
+\end{block}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\end{column} % End of the first column
+\begin{column}{.03\textwidth}\end{column} % Empty spacer column
+ 
+\begin{column}{.465\textwidth} % The second column
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{block}{مرور کار‌های انجام‌شده}
+\begin{itemize}
+% \item \textbf{Data Acquisition }
+% \begin{itemize}
+% \item  There are five criteria defined as the weighted attributes:
+% \begin{enumerate}
+% \item Products price, identified by the nominal in
+% \item Distance of seller location to the user’s location, 
+% \end{enumerate}
+% \end{itemize}
+% \bigskip
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{figures/pic3.png}
+\\{\small مدل‌سازی تیم }
+\end{figure}
+
+
+\item
+تیم‌سازی به دو صورت انجام می‌شود:
+\begin{itemize}
+\item \textbf{پرس‌‌و‌‌جو با یک جنبه
+}: در تیم‌سازی با پرس‌و‌جو یک جنبه، هدف یافتن گروهی از افراد خبره برای یک پرس‌و‌جو داده شده است. در این روش جنبه‌های مختلف یک کار و نیاز‌های اطلاعاتی در نظر گرفته نمی‌شود.
+
+\item  \textbf{پرس‌‌و‌‌جو با چند جنبه}: در تیم‌سازی با پرس‌و‌جو چند جنبه، پرس‌و‌جو داده شده دارای جنبه‌‌های مختلف است و هدف یافتن افرادی است که با همکاری یکدیگر بتوانند تمام بخش‌های پرس‌و‌جو را پوشش دهند. (ویژگی پوشش‌دهی بالا)
+
+\end{itemize}
+
+
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+\item {\textbf{متن جهت پر کردن فضا}}
+
+\end{itemize}
+\end{block}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+%---
+
+%----------------------------------------------------------------------------------------
+%	RESULTS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{نتیجه‌گیری}
+
+\begin{center} \textbf{نتیجه‌گیری} \end{center}
+\vspace{-10mm}
+\begin{center} \textcolor{white2}{\rule{0.5\linewidth}{0.5}} \end{center} 
+
+\begin{itemize}
+
+\item عملکرد روش‌های رای‌گیری از روش‌های تولیدکننده بالاتر است.
+
+\item نتیجه‌گیری۲
+\item نتیجه‌گیری۳
+\item نتیجه‌گیری۴
+    
+\end{itemize}
+\end{block}
+
+
+\begin{block}{کار‌های آتی}
+\begin{itemize}
+
+\item بازیابی مدیر پروژه یا رهبر تیم چابک
+\item کار‌های آتی۲
+\item کار‌های آتی۳
+\item کار‌های آتی۴
+
+
+\end{itemize}
+\end{block}
+
+
+
+
+\begin{block}{مراجع}
+%\bibliographystyle{ACM-Reference-Format}
+%\bibliography{sample}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\begin{latin}
+\begin{thebibliography}{9}
+\bibitem{1}
+Sepideh Entezari Maleki.
+ \newblock {reference}.
+ \newblock \texttt{reference},.
+\bibitem{2}
+ reference2
+
+\end{thebibliography}
+\end{latin}
+\end{block}
+
+
+\end{column} % End of the second column
+
+\begin{column}{.015\textwidth}\end{column} % Empty spacer column
+
+\end{columns} % End of all the columns in the poster
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+% \begin{center}
+% \color {white}
+% \textbf{
+%  }
+% \bigskip
+% \end{center}
+\end{frame} % End of the enclosing frame
+
+\end{document}
