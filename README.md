@@ -7,5 +7,5 @@ MS Poster Template with Latex for Shahid Beheshti University (SBU).
 
 # Installation
 1. Clone/Download the project.
-2. Upload the project on Overleaf (overleaf.com).
+2. Upload the project to Overleaf (overleaf.com).
 3. Open myposter.tex file.
